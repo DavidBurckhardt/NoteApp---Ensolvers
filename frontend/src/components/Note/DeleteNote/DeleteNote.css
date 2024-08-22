@@ -1,0 +1,41 @@
+/* DeleteNote.css */
+.note-form-delete {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centra los elementos horizontalmente */
+    justify-content: center; /* Opcional: centra verticalmente si el contenedor tiene altura fija */
+    gap: 16px; /* Espacio entre los elementos */
+    width: 50%;
+}
+
+.select-note {
+    width: 50%;
+    height: 45px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    color: #333;
+    border-color: #009087;
+}
+
+.select-note:focus {
+    border-color: #009087; /* Color del borde cuando se enfoca */
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.select-note option {
+    padding: 8px;
+    background-color: #fff;
+    color: #333;
+}
+
+.deleteall{
+    font-weight: bold;
+    font-style: italic;
+}
+
+
+

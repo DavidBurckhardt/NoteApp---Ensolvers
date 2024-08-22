@@ -1,0 +1,41 @@
+version: '3.7'
+services:
+
+  database:
+    image: postgres:16
+    container_name: noteschallenge-davidburckhardt-db
+    environment:
+      POSTGRES_USER: davidnotes
+      POSTGRES_PASSWORD: 1234
+      POSTGRES_DB: notes
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+      - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U davidnotes -d notes"]
+      interval: 10s
+      retries: 5
+      start_period: 30s
+      timeout: 5s
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: noteschallenge-davidburckhardt-frontend
+    ports:
+      - "3000:80"
+
+  backend:
+    build:
+      context: ./backend
+    container_name: noteschallenge-davidburckhardt-backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      database:
+        condition: service_healthy
+
+volumes:
+  pgdata:

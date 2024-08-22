@@ -1,0 +1,126 @@
+.notes-container-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; 
+    gap: 20px; 
+    width: 100%; 
+}
+
+.notes-table-container-list {
+    flex: 1; /* Ocupa el espacio disponible */
+    max-width: 60%; /* Ajusta el ancho máximo del contenedor de la tabla */
+}
+
+.note-details-list {
+    flex: 1; /* Ocupa más espacio que el contenedor de la tabla */
+    max-width: 20%; /* Ajusta el ancho máximo del contenedor del área de texto */
+}
+
+.notes-table-container {
+    margin-top: 0px;
+    max-height: 400px; /* Altura máxima del contenedor */
+    overflow-y: auto; /* Habilita el scroll vertical */
+}
+
+.notes-table {
+    width: 100%; /* El 100% del contenedor padre */
+    max-width: 1600px; /* Aumenta el ancho máximo de la tabla */
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 2px;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.notes-table th, .notes-table td {
+    border: 1px solid white;
+    padding: 12px;
+    text-align: left;
+}
+
+.note-details-list label {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #009087;
+    width: 150px; /* Ajusta el ancho de las etiquetas según sea necesario */
+    text-align: left; /* Alinea el texto de la etiqueta a la izquierda */
+    font-weight: bold;
+  }
+
+.notes-table th {
+    background-color: #009087;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.note-textarea {
+    height: 150px; /* Altura del textarea */
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    box-sizing: border-box; /* Incluye el padding y el borde en la altura total */
+  }
+
+.note-details-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+.filters{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 30%;
+}
+
+.filter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.select-note-list {
+    width: 100%;
+    height: 45px;
+    padding: 8px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    background-color: #f9f9f9;
+    color: #333;
+    border-color: #009087;
+}
+
+.select-note-list:focus {
+    border-color: #009087; /* Color del borde cuando se enfoca */
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.2);
+}
+
+.select-note-list option {
+    padding: 8px;
+    background-color: #fff;
+    color: #333;
+}
+
+.filter label {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #009087;
+    width: 200px; /* Ajusta el ancho de las etiquetas según sea necesario */
+    text-align: left; /* Alinea el texto de la etiqueta a la izquierda */
+    font-weight: bold;
+  }
+
+
+
+
+
+

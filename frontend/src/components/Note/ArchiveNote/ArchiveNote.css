@@ -1,0 +1,50 @@
+.notes-table-container {
+    margin-top: 0px;
+    max-height: 400px; /* Altura máxima del contenedor */
+    overflow-y: auto; /* Habilita el scroll vertical */
+}
+
+.notes-table {
+    width: 100%; /* El 100% del contenedor padre */
+    max-width: 1600px; /* Aumenta el ancho máximo de la tabla */
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 2px;
+    overflow: hidden;
+    font-size: 18px;
+}
+
+.notes-table th, .notes-table td {
+    border: 1px solid #009087;
+    padding: 12px;
+    text-align: left;
+}
+
+.notes-table th {
+    background-color: #009087;
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+.notes-table tbody tr {
+    background-color: #ddd;
+}
+
+.notes-table tbody tr:hover {
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+/* Asegura que el checkbox esté centrado */
+.notes-table td input[type="checkbox"] {
+    transform: scale(1.3); /* Agranda el checkbox */
+    display: block;
+    margin: 0 auto; /* Centra el checkbox horizontalmente */
+}
+
+.notes-table td input[type="checkbox"]:checked {
+    background-color: gray; 
+    border-color: gray; 
+}
+

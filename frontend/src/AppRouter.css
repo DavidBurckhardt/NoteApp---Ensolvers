@@ -1,0 +1,10 @@
+/* src/AppRouter.css */
+.app-router {
+    max-height: 100vh; /* Asegúrate de que el contenedor ocupe al menos el alto de la pantalla */
+    overflow-y: hidden;
+    padding: 0px;
+    padding: 0;
+  }
+
+
+  
