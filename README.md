@@ -68,4 +68,4 @@ The application components include:
 
 ## To Ensolvers
 
-Finaly, I want to express my sincere effort and dedication in the technical test. I am truly enthusiastic about the opportunity to work at Ensolvers and am eager to contribute to your team. Thank you for considering my application.
+Finaly, I want to express my sincere effort and dedication in the technical test. I am truly enthusiastic about the opportunity to work at Ensolvers and am eager to contribute to your team. Thank you for considering my application. 😊
