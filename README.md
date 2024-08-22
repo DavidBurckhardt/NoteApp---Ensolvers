@@ -7,7 +7,7 @@ Before you begin, ensure you have the following installed on your system:
 1. **Docker**: [Docker installation instructions](https://docs.docker.com/engine/install/)
 2. **Docker Compose**: [Docker Compose installation instructions](https://docs.docker.com/compose/install/)
 
-**Note**: Even if you don't have Docker or Docker Compose installed, the `start-project` script will verify their presence and install them if necessary. This ensures that your environment is properly set up before running the application.
+**Note**: Even if you don't have Docker or Docker Compose installed, the `start-project` script will verify their presence and install them if necessary. This ensures that your environment is properly set up before running the application. If Docker Compose needs to be installed, the curl command is required, and it should be installed beforehand.
 
 Once the setup is complete, just open port `3000` in your browser and enjoy the app! 😊
 
@@ -66,3 +66,6 @@ The application components include:
 - **Backend**: Developed using **Java** with **Spring Boot**, a powerful framework for building production-ready applications. The backend handles business logic, data processing, and communicates with the PostgreSQL database. It runs on port `8080`.
 
 
+## To Ensolvers
+
+Finaly, I want to express my sincere effort and dedication in the technical test. I am truly enthusiastic about the opportunity to work at Ensolvers and am eager to contribute to your team. Thank you for considering my application.

@@ -5,10 +5,12 @@ import ar.ensolvers.domain.Tag.TagBo;
 import ar.ensolvers.infrastructure.output.entity.Tag;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
+import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
+@Repository
 public interface TagRepository extends JpaRepository<Tag, Integer> {
 
     @Transactional(readOnly = true)
